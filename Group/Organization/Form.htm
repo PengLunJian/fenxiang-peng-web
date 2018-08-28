@@ -1,0 +1,56 @@
+﻿
+<form name="organizationForm" id="organizationForm" method="POST">
+    <input name="OrgId" type="hidden" />
+    <input name="Id" type="hidden" />
+    <input name="ParentId" type="hidden" />
+    <div id="organizationRegion" class="formRegion"  style = "width:490px;display: block;">
+        <div class="inputField" id="fr_Type">
+            <div class="inputRegion" id="ir_Type">
+                <div class="inputLabel">类型:</div>
+                <input id = "Type" name="Type" class="inputValue inputS easyui-combobox" 
+                       data-options="prompt:'类型',valueField:'value',textField:'text',data:organizationType"/>
+            </div>
+        </div>
+        <div class="inputField" id="fr_Code">
+            <div class="inputRegion" id="ir_Code">
+                <div class="inputLabel">编码:</div>
+                <input id = "Code" name="Code" class="inputValue inputS easyui-textbox" 
+                       data-options="prompt:'代码'"/>
+            </div>
+        </div>
+        <div class='inputField' id='fr_FullName'>
+            <div class='inputRegion' id='ir_FullName'>
+                <div class='inputLabel'>全称:</div>
+                <input id = 'FullName' name='FullName' class='inputValue inputS easyui-textbox' 
+                       data-options="prompt:'全称'"/>
+            </div>
+        </div>
+        <div class="inputField" id="fr_ShortName">
+            <div class="inputRegion" id="ir_ShortName">
+                <div class="inputLabel">名称:</div>
+                <input id = "ShortName" name="ShortName" class="inputValue inputS easyui-textbox" 
+                       data-options="prompt:'名称'"/>
+            </div>
+        </div>
+        <div class='inputField' id='fr_OrgLevel'>
+            <div class='inputRegion' id='ir_OrgLevel'>
+                <div class='inputLabel'>级别:</div>
+                <input id = 'OrgLevel' name='OrgLevel' class='inputValue inputS easyui-numberbox' 
+                       data-options="prompt:'级别'"/>
+            </div>
+        </div>
+        <div class='inputField' id='fr_LevelIndex'>
+            <div class='inputRegion' id='ir_LevelIndex'>
+                <div class='inputLabel'>序号:</div>
+                <input id='LevelIndex' name='LevelIndex' class='inputValue inputS easyui-numberbox'
+                       data-options="prompt:'序号'" />
+            </div>
+        </div>
+        <div class="inputField" id="fr_Memo">
+            <div class="inputRegion" id="ir_Memo">
+                <div class="inputLabel">备注:</div>
+                <textarea id = "Memo" name = "Memo" class="inputValue_Memo"></textarea>
+            </div>
+        </div>
+    </div>
+</form>

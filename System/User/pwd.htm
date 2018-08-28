@@ -1,0 +1,34 @@
+﻿
+<form name="userForm" id="userForm" method="POST">
+    <input name="Id" type="hidden"/>
+    <div id="userRegion" class="formRegion" style="display: block; width: 490px;">
+        <div class="inputField">
+            <div class="inputRegion">
+                <div class="inputLabel">当前用户：</div>
+                <input id="userName" class="messager-input" data-options="readonly:true" type="text" value="" />
+            </div>
+        </div>
+        <div class="inputField">
+            <div class="inputRegion">
+                <div class="inputLabel">原始密码：</div>
+                <input id="oldPwd" class="messager-input" type="password" value="" />
+            </div>
+        </div>
+        <div class="inputField">
+            <div class="inputRegion">
+                <div class="inputLabel">新设密码：</div>
+                <input id="newPwd" class="messager-input" type="password" value="" />
+            </div>
+        </div>
+        <div class="inputField">
+            <div class="inputRegion">
+                <div class="inputLabel">确认密码：</div>
+                <input id="enterPwd" class="messager-input" type="password" value="" />
+            </div>
+        </div>
+    </div>
+    <div style="text-align: right; margin-right: 30px;">
+        <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" onclick="changeEnter()">确定</a>
+        <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" onclick="changeCancel()">取消</a>
+    </div>
+</form>

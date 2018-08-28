@@ -1,0 +1,1 @@
+﻿<%@ Page Language='C#' AutoEventWireup='true' Inherits='Agebull.SystemAuthority.Organizations.OrganizePositionPage.Action' %>

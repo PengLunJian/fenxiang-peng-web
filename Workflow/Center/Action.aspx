@@ -1,0 +1,1 @@
+﻿<%@ Page Language='C#' AutoEventWireup='true'  Inherits='Gboxt.Common.Workflow.UserJobPage.Action' %>

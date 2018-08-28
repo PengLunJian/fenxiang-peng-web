@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=21">
+    <title>
+        <asp:ContentPlaceHolder ID="PagePathRegion" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%--    <link href="ueditor/third-party/codemirror/codemirror.css" rel="stylesheet" />--%>
+    <link rel="stylesheet" type="text/css" href="/Styles/css/default.css?v=20180826" />
+    <!--JQuery-->
+    <script type="text/javascript" src="/scripts/jquery.min.js?v=20180826"></script>
+    <script type="text/javascript">
+        window.UEDITOR_HOME_URL = "/ueditor/";
+    </script>
+    <!--ueditor-->
+<%--    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js?v=20180826"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js?v=20180826"> </script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.parse.min.js?v=20180826"> </script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js?v=20180826"></script>
+    <script type="text/javascript" src="/ueditor/third-party/codemirror/codemirror.js"></script>
+    <script type="text/javascript" src="/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js?v=20180826"></script>--%>
+    <!--EasyUI-->
+    <%--<script type="text/javascript" src="/Scripts/easyloader.js?v=20180826"></script>--%>
+    <link rel="stylesheet" type="text/css" href="/Scripts/themes/material/easyui.css?v=20180826" />
+    <link rel="stylesheet" type="text/css" href="/Scripts/themes/icon.css?v=20180826" />
+    <script type="text/javascript" src="/Scripts/jquery.easyui.min.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/datagrid-detailview.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/locale/easyui-lang-zh_CN.js?v=20180826"></script>
+    <!--Extend-->
+    <script type="text/javascript" src="/Scripts/extend/core.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/extend/button.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/extend/ajax.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/extend/extend.js?v=20180826"></script>
+    <%--<script type="text/javascript" src="/Scripts/extend/cache.js?v=20180826"></script>--%>
+    <script type="text/javascript" src="/Scripts/extend/page.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/extend/dialog.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/extend/tree.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/extend/grid_panel.js"></script>
+    <script type="text/javascript" src="/Scripts/extend/card_panel.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/extend/type.js?v=20180826"></script>
+<%--    <script type="text/javascript" src="/Scripts/extend/ueditor_ex.js?v=20180826"></script>--%>
+    <!--Business-->
+    <script type="text/javascript" src="/Scripts/business/type.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/business/business.js?v=20180826"></script>
+    <script type="text/javascript" src="/Scripts/business/userjob.js?v=20180826"></script>
+    <link rel="stylesheet" type="text/css" href="/Styles/model/Site.css?v=20180826" />
+    <link rel="stylesheet" type="text/css" href="/Styles/model/icon.css?v=20180826" />
+    <style type="text/css">
+        .parentInput {
+            border: 0 white solid;
+            color: red;
+            text-align: right;
+        }
+
+        .selectInput {
+            border: 0 white solid;
+            color: blue;
+            text-align: right;
+        }
+
+        .editInput {
+            border-bottom: 1px black solid;
+            border-left: 0 black solid;
+            border-right: 0 black solid;
+            border-top: 0 black solid;
+            text-align: right;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="CssRegion" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ScriptRegion" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="rBody" class="content_body" style="visibility: hidden;">
+        <asp:ContentPlaceHolder ID="BodyRegion" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div style="display: none; visibility: collapse;">
+        <div id="xx_dialog_region_xx" style="display: none; visibility: collapse;">
+        </div>
+        <asp:ContentPlaceHolder ID="HideRegion" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="__loading__">
+        <div class="panel-loading busy_body">正在拼命执行中...</div>
+    </div>
+    <div id="__ueditor_hide__" style="width: 1px; height: 1px; left: 0px; top: 0; visibility: hidden; position: absolute; z-index: 99999"></div>
+</body>
+</html>

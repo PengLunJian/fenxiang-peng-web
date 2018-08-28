@@ -1,0 +1,69 @@
+﻿<!--此标记表明此文件可被设计器更新,如果不允许此操作,请删除此行代码.design by:agebull designer date:2017/6/21 16:25:18-->
+<form name='personnelForm' id='personnelForm' method='POST' enctype='multipart/form-data'>
+    <input name='Id' type='hidden' />
+    <div id='personnelRegion' class='formRegion' style='width:485px;'>
+            <div class='inputField' id='fr_FullName'>
+                <div class='inputRegion' id='ir_FullName'>
+                    <div class='inputLabel'>姓名:</div>
+                    <input id='FullName' name='FullName' class='inputValue inputS easyui-textbox'
+                           data-options="prompt:'姓名',required:true,validType:['strLimit[0,50]']"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Six'>
+                <div class='inputRegion' id='ir_Six'>
+                    <div class='inputLabel'>性别:</div>
+                    <input id='Six' name='Six' class='inputValue inputS easyui-combobox'
+                           data-options="prompt:'性别',valueField:'value',textField:'text',data:yesnoType"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Birthday'>
+                <div class='inputRegion' id='ir_Birthday'>
+                    <div class='inputLabel'>生日:</div>
+                    <input id='Birthday' name='Birthday' class='inputValue inputS easyui-datebox'
+                           data-options="prompt:'生日'"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Tel'>
+                <div class='inputRegion' id='ir_Tel'>
+                    <div class='inputLabel'>电话:</div>
+                    <input id='Tel' name='Tel' class='inputValue inputS easyui-textbox'
+                           data-options="prompt:'电话',validType:['strLimit[0,50]']"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Mobile'>
+                <div class='inputRegion' id='ir_Mobile'>
+                    <div class='inputLabel'>手机:</div>
+                    <input id='Mobile' name='Mobile' class='inputValue inputS easyui-textbox'
+                           data-options="prompt:'手机',validType:['strLimit[0,50]']"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Memo'>
+                <div class='inputRegion' id='ir_Memo'>
+                    <div class='inputLabel'>备注:</div><br/>
+                    <input id='Memo' name='Memo' class='inputValue_Memo_S easyui-textbox'
+                           data-options="prompt:'备注',multiline:true"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_RoleId'>
+                <div class='inputRegion' id='ir_RoleId'>
+                    <div class='inputLabel'>角色:</div>
+                    <input id='RoleId' name='RoleId' class='inputValue inputS easyui-textbox' readfield='Role'
+                           data-options="prompt:'标题',readonly:true"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Role'>
+                <div class='inputRegion' id='ir_Role'>
+                    <div class='inputLabel'>角色:</div>
+                    <input id='Role' name='Role' class='inputValue inputS easyui-textbox'
+                           data-options="prompt:'标题',validType:['strLimit[0,50]']"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_UserId'>
+                <div class='inputRegion' id='ir_UserId'>
+                    <div class='inputLabel'>系统用户外键:</div>
+                    <input id='UserId' name='UserId' class='inputValue inputS easyui-textbox'
+                           data-options="prompt:'标识',readonly:true"/>
+                </div>
+            </div>
+    </div>
+</form>

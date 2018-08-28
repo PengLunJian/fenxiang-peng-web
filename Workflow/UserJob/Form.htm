@@ -1,0 +1,48 @@
+﻿<!--此标记表明此文件可被设计器更新,如果不允许此操作,请删除此行代码.design by:agebull designer date:2017/6/20 10:46:41-->
+<form name='userJobForm' id='userJobForm' method='POST' enctype='multipart/form-data'>
+    <input name='Id' type='hidden' />
+    <input name='JobStatus' type='hidden' />
+    <input name='CommandType' type='hidden' />
+    <input name='LinkId' type='hidden' />
+    <input name='EntityType' type='hidden' />
+    <input name='ToUserName' type='hidden' />
+    <input name='FromUserId' type='hidden' />
+    <input name='FromUserName' type='hidden' />
+    <div id='userJobRegion' class='formRegion' style='width:485px;'>
+            <div class='inputField' id='fr_Title'>
+                <div class='inputRegion' id='ir_Title'>
+                    <div class='inputLabel'>标题:</div>
+                    <input id='Title' name='Title' class='inputValue inputS easyui-textbox'
+                           data-options="prompt:'标题',required:true,validType:['strLimit[0,50]']"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Date'>
+                <div class='inputRegion' id='ir_Date'>
+                    <div class='inputLabel'>发生日期:</div>
+                    <input id='Date' name='Date' class='inputValue inputS easyui-datebox'
+                           data-options="prompt:'发生日期'"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_Message'>
+                <div class='inputRegion' id='ir_Message'>
+                    <div class='inputLabel'>工作消息:</div><br/>
+                    <input id='Message' name='Message' class='inputValue_Memo_S easyui-textbox'
+                           data-options="prompt:'工作消息',multiline:true,validType:['strLimit[0,50]']"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_JobType'>
+                <div class='inputRegion' id='ir_JobType'>
+                    <div class='inputLabel'>任务分类:</div>
+                    <input id='JobType' name='JobType' class='inputValue inputS easyui-combobox'
+                           data-options="prompt:'任务分类',valueField:'value',textField:'text',data:userJobType"/>
+                </div>
+            </div>
+            <div class='inputField' id='fr_ToUserId'>
+                <div class='inputRegion' id='ir_ToUserId'>
+                    <div class='inputLabel'>目标用户名字:</div>
+                    <input id='ToUserId' name='ToUserId' class='inputValue inputS easyui-combobox' readfield='ToUserName'
+                           data-options="prompt:'接收用户名字',required:true,valueField:'id', textField:'text',multiple:true,url:'/Api/Index.aspx?action=user',validType:['selectNoZero["#ToUserId"]']"/>
+                </div>
+            </div>
+    </div>
+</form>

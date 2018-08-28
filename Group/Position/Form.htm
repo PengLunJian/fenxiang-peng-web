@@ -1,0 +1,34 @@
+﻿<!--此标记表明此文件可被设计器更新,如果不允许此操作,请删除此行代码.design by:agebull designer date:2018/8/26 22:58:10-->
+<form name='positionForm' id='positionForm' method='POST' enctype='multipart/form-data'>
+    <input name="id" type="hidden" />
+    <div id='positionRegion' class='formRegion' style='width: 485px;'>
+        <div class='inputField' id='fr_fullName'>
+            <div class='inputRegion' id='ir_fullName'>
+                <div class='inputLabel'>全称:</div>
+                <input id='fullName' name='fullName' class='inputValue inputS easyui-textbox'
+                       data-options="prompt:'全称',validType:['strLimit[0,200]']" />
+            </div>
+        </div>
+        <div class='inputField' id='fr_shortName'>
+            <div class='inputRegion' id='ir_shortName'>
+                <div class='inputLabel'>简称:</div>
+                <input id='shortName' name='shortName' class='inputValue inputS easyui-textbox'
+                       data-options="prompt:'简称',required:true,validType:['strLimit[0,200]']" />
+            </div>
+        </div>
+        <div class='inputField' id='fr_positionLevel'>
+            <div class='inputRegion' id='ir_positionLevel'>
+                <div class='inputLabel'>级别:</div>
+                <input id='positionLevel' name='positionLevel' class='inputValue inputS easyui-textbox'
+                       data-options="prompt:'级别'" />
+            </div>
+        </div>
+        <div class='inputField' id='fr_memo'>
+            <div class='inputRegion' id='ir_memo'>
+                <div class='inputLabel'>备注:</div><br />
+                <input id='memo' name='memo' class='inputValue_Memo_S easyui-textbox'
+                       data-options="prompt:'备注',multiline:true" />
+            </div>
+        </div>
+    </div>
+</form>
